@@ -1,7 +1,7 @@
 ! ~/.Xresources by soybin
 
 #define FONT monaco
-#define SIZE 16
+#define SIZE 14
 
 ! urvxt setup
 URxvt*scrollBar:        false
@@ -39,4 +39,4 @@ Xft.rgba:                   rgb
 Xft.lcdfilter:              lcddefault
 Xft.dpi:                    DPI
 
-URxvt.font:									xft:FONT:size=SIZE
+URxvt.font:									xft:FONT:size=SIZE,xft:SourceHanSansJP-Light.ttc:size=SIZE
