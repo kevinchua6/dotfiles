@@ -1,2 +1,2 @@
 # dotfiles
-my arch linux dotfiles
+my linux dotfiles
