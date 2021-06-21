@@ -1,8 +1,5 @@
 filetype plugin indent on
 
-" recursive search on current directory to find files.
-set path+=**
-
 " lightline
 set laststatus=2
 set noshowmode
@@ -13,20 +10,30 @@ let g:lightline = {
       \             [ 'readonly', 'filename', 'modified', 'helloworld' ] ]
       \ },
       \ 'component': {
-      \   'helloworld': 'hello, *nix*orn!'
+      \   'helloworld': 'Hello!!'
       \ },
       \ }
 
 " muh numbers
-set relativenumber
+" set relativenumber
+:set relativenumber number
+syntax on
 
 " two spaces are way cooler than four.
-set shiftwidth=2
-set tabstop=2
 set autoindent
+set expandtab
+set linebreak
+set nocompatible
+set shiftwidth  =2
+set tabstop     =2
+" set softtabstop =4
 set smartindent
+set wrap
+set whichwrap+=<,>,h,l,[,]
+set scrolloff=1
+set ruler
+set mouse=a
 
-syntax on
 set encoding=utf-8
 set clipboard=unnamedplus
 
@@ -41,3 +48,6 @@ nnoremap <F10> :wa <CR> :!clear && g++ % -o %< && ./%< <CR>
 
 " this one i use for projects in current devel
 nnoremap <F9> :wa <CR> :!make <CR>
+
+" quality of life stuff
+imap jj <Esc>
